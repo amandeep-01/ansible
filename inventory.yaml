@@ -1,0 +1,4 @@
+linux:
+    hosts:
+       my-vm-2:
+            ansible_host: 10.5.0.5

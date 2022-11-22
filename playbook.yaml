@@ -1,0 +1,9 @@
+ - name: iamin
+   hosts:
+        linux
+        linux2
+   tasks:
+     - name: python is there
+       yum:
+         name: python
+         state: latest

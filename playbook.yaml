@@ -5,6 +5,6 @@
    remote_user: root
    tasks:
      - name: python is there
-       apt:
+       yum:
          name: python
          state: latest

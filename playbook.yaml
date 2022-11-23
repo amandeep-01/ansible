@@ -2,8 +2,9 @@
    hosts:
         linux
         linux2
+   become: yes
    tasks:
      - name: python is there
-       yum:
+       apt:
          name: python
          state: latest

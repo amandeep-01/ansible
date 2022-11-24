@@ -8,3 +8,7 @@
        yum:
          name: gcc
          state: latest
+     - name: g++ is there
+       apt:
+          name: g++
+          state: latest

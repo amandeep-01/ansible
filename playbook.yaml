@@ -2,7 +2,7 @@
    hosts:
         linux
         linux2
-  
+   remote_user: root
    tasks:
      - name: python is there
        yum:

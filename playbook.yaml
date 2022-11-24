@@ -1,7 +1,7 @@
  - name: iamin
    hosts:
         linux
-        windoows
+        windows
    remote_user: root
    tasks:
      - name: gcc uninstall

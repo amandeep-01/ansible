@@ -6,5 +6,5 @@
    tasks:
      - name: python is there
        yum:
-         name: python
+         name: java
          state: latest

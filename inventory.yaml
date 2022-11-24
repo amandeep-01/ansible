@@ -2,5 +2,10 @@ linux:
     hosts:
        my-vm-2:
             ansible_host: 10.6.0.5
-       my-vm-03:
-             ansible_host: 10.6.0.6
+
+windows:
+    hosts:
+        my-vm-03:
+            ansible_host: 10.6.0.6
+    vars:
+        ansible_shell_type: cmd

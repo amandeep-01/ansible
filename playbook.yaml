@@ -4,11 +4,15 @@
         linux2
    remote_user: root
    tasks:
-     - name: python is there
+     - name: gcc uninstall
        yum:
          name: gcc
-         state: latest
-     - name: g++ is there
+         state: absent
+     - name: g++ uninstall
        apt:
           name: g++
-          state: latest
+          state: absent
+     - name: docker uninstall
+       apt:
+         name: docker.io
+         state: absent

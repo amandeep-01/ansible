@@ -5,12 +5,12 @@
    tasks:
      - name: g++ install
        yum:
-         name: gcc
+         name: g++
          state: latest
      - name: python install
        apt:
           name: python
-          state: absent
+          state: latest
     #  - name: docker uninstall
     #    apt:
     #      name: docker.io

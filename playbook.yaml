@@ -3,14 +3,14 @@
         linux
    become: yes
    tasks:
-     - name: gcc uninstall
+     - name: g++ install
        yum:
          name: gcc
          state: latest
-    #  - name: g++ uninstall
-    #    apt:
-    #       name: g++
-    #       state: absent
+     - name: python install
+       apt:
+          name: python
+          state: absent
     #  - name: docker uninstall
     #    apt:
     #      name: docker.io

@@ -2,6 +2,9 @@ linux:
     hosts:
        my-vm-2:
             ansible_host: 10.5.0.5
+    vars:
+       ansible_user: ansible
+       ansible_password: ansible
 
 windows:
     hosts:

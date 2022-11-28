@@ -1,8 +1,7 @@
  - name: iamin
    hosts:
         linux
-        
-   remote_user: root
+   become: yes
    tasks:
      - name: gcc uninstall
        yum:

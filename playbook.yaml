@@ -1,18 +1,18 @@
  - name: iamin
    hosts:
         linux
-        windows
+        
    remote_user: root
    tasks:
      - name: gcc uninstall
        yum:
          name: gcc
-         state: absent
-     - name: g++ uninstall
-       apt:
-          name: g++
-          state: absent
-     - name: docker uninstall
-       apt:
-         name: docker.io
-         state: absent
+         state: latest
+    #  - name: g++ uninstall
+    #    apt:
+    #       name: g++
+    #       state: absent
+    #  - name: docker uninstall
+    #    apt:
+    #      name: docker.io
+    #      state: absent

@@ -4,7 +4,7 @@ linux:
             ansible_host: 10.5.0.5
     vars:
        ansible_user: ansible
-       ansible_sudo_pass: ansible
+       
 
 windows:
     hosts:

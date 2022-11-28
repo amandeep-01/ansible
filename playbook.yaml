@@ -6,7 +6,7 @@
      - name: gcc uninstall
        yum:
          name: gcc
-         state: latest
+         state: absent
     #  - name: g++ uninstall
     #    apt:
     #       name: g++
